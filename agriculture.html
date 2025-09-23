@@ -1,0 +1,857 @@
+ <!--DOCTYPE html>
+<designed by TUMURAMYE MOSES-->
+<html lang="en">
+	<meta charset="UTF-8">
+	<meta name="veiwport" content="width=device-width, initial-scale=1.0">
+	<meta name="keyword" content="vegetables, fruits, greensvegetables, farming, animals, meat, eggs, hens,goat'smeat, milk, agriculture, glocerystore,">
+<title>PREMIUM uganda Agricultural products</title>
+	<link rel="canonical" href="https://papu.ca.uganda-farm/" />
+<script src="http://www.google.com/recaptchaa/api.js" async defer></script>
+	<!-- Google AdSense meta tags added by Site Kit -->
+	<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+	<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+	<!-- End Google AdSense meta tags added by Site Kit -->
+	 <meta name="onesignal" content="wordpress-plugin"/>
+           
+<style>
+		:root {
+		-primary:#2e8b57;
+		-secondary:#f5a623;
+		-dark;#1a3c27
+		-ligth:#f9f9f9;
+	    }
+		
+		*{
+		  margin:1;
+		  padding:2;
+		  box-sizing:border-box;
+		  font-family:Times new romans,Tahoma,Geneva,verdana,sans-serif;
+		 }
+	body {
+	
+	   background-color:var(-light);
+	   color:#666;
+	   line-height:1.8;
+	   }
+	   
+	   header {
+		background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7))url(uganda-farm.jpg');
+		background-size:cover;
+		background-position:center;
+		color:wtite;
+		padding:2rem 0;
+		text-align:center;
+		position:relative;
+	    }
+		
+		.container {
+			width:90%;
+			max-width:1200px;
+			margin:0 auto;
+		}
+		
+	   nav {
+		display:flex-container;
+		jstify-content:space-betwwen;
+		align-items:center;
+		padding:1rem 0;
+	   }
+	   
+	   .logo {
+			font-size:2rem;
+			font-weight:bold;
+			color:white;
+		}
+		
+		.logo span {
+			color:var(-secondary);
+		}
+	   nav-links {
+		display: grid;
+		list-style:none;
+	    }
+		
+		
+		nav-links li {
+			margin-left:2rem;
+		}
+		
+		.nav-links a {
+			color:white;
+			text-decoration:curved;
+			font-weight:500;
+			transion:all0.3s ease;
+		}
+		
+		.nav-links a:hove {
+			color:var(-secondary);
+		}
+		
+		.hero {
+			padding:5rem 0;
+		}
+		
+		.hero h1 {
+			fontsize:3rem;
+			margin-bottom:1rem;
+		}
+		
+		.hero p {
+			font-size:1.2rem;
+			max-width:700px;
+			margin:0 auto 2rem
+		}
+		
+		
+		.btn {
+			display:inline-block;;
+			background:var(-secondary);
+			color:white;
+			padding:0.8rem 1.8rem;
+			border:none;
+			border-radius:50px;
+			text-decoration:none;
+			font-weight:bold;
+			transition:all 0.3s ease;
+		}
+		
+		.btn:hover {
+			background:var(-primary);
+			transform:translateY(-3px);
+			box-shadow:0 10px 20px rgba(0,0,0,0.1);
+		}
+		
+		.products {
+			padding:4rem 0;
+		}
+		
+		.section-title {
+			text-align:center;
+			margin-bottom:3rem;
+		}
+		
+		.section-title h2 {
+			font-size:2.5rem;
+			color:var(-dark);
+			poosition:relative;
+			display:grid-block;
+			padding-bottom:1rem;
+		}
+		
+		.section-title h2::after {
+			content:";
+			position:absolute;
+			bottom:0;
+			left:50%;
+			transform:translateX(-50%);
+			width:100px
+			height:4px;
+			background:var(-secondary);
+		}
+		
+		.product-grid {
+			display: flex;
+			grid-template-columns:repeat(auto-fill,minmax(300px, 1fr));
+			gap:2rem;
+		}
+		
+		.product-card {
+			background:white;
+			border-radius:10px;
+			overflow:0 5px 15px rgba(0,0,0,0.1);
+			transition;All 0.3s ease;
+		}
+		
+		.product-card:hover {
+			transform:translateY(10px);
+			box-shadow:0 15px 30px rgba(0,0,0,0.2);
+		}
+		
+		.product-img {
+			height:200px;
+			overflow:hidden;
+		}
+		
+		.product-img img {
+			width:100%;
+			height:100%
+			object-fit:cover;
+			transtioon:all 1s ease;
+		}
+		
+		.product-card:hover product-img img {
+			transformm: scale(1.1);
+		}
+		
+		.product-info {
+			paddinng: 1.5rem;
+		}
+		
+		.product-info h3 {
+			font-size:2rem;
+			margin-bottom:0.5rem;
+			color: var(-dark)
+		}
+		
+		.product-info p {
+			color:#666;
+			margin-bottom:1rem
+		}
+		
+		
+		.product-meta {
+			display: grid;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		
+		#cart {
+			postion: fixed;
+			top: 10px;
+			right: 10px;
+			background: white;
+			padding:10px;
+			border:1px solid #ddd;
+			min-width:200px;
+		}
+		.cart-item {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 5px;
+		}
+		
+		.price {
+			font-weight: bold;
+			color: var(-primary);
+			font-size: 1.2rem;
+		}
+		
+		.order-btn {
+			background: var(-escondary);
+			color: gold;
+			border: none;
+			padding: 0.5rem 1rem;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: all 0.3s ease
+		}
+		
+		.order-btn:hover {
+			background:var(-secondary);
+		}
+		
+		.features {
+			padding:5rem;
+			background:vary(-dark);
+			color:white;
+		}
+		
+		.feature-grid {
+			display: grid;
+			grid-template-columns:repeat(auto-fit, minmaax(250px,1fr))
+			gap:2rem;
+		}
+		
+		.feature-card {
+			text-align:center;
+			padding:2rem;
+		}
+		
+		.feature-icon {
+			font-size:3rem;
+			color:var(-secondary);
+			margin-bottom:1.5rem;
+		}
+		
+		.feature-card h3 {
+			font-size:1.5rem;
+			margin0bottom:1rem;
+		}
+		
+		.about {
+			padding:5rem 0;
+			background:white;
+		}
+		
+		.about-content {
+			display: grid;
+			grid-template-columns:1fr 1fr;
+			gap:3rem;
+			align-items:center;
+		}
+		
+		.about-img {
+			border-radius:10px;
+			overflow:hidden;
+			box-shadow:0 10px 30px rgba(0,0,0,0.1);
+		}
+		
+		.about-img img {
+			width:100%;
+			height:auto;
+			display: block;
+		}
+		
+		.about-text h2 {
+			font-size: 2.5rem;
+			color:var(-dark);
+			margin-bottom:1.5rem;
+		}
+		
+		.bout-text p {
+			margin-bottom: 1.5rem;
+			color:#666;
+		}
+		
+		.contact {
+			padding:5rem;
+			background:var(-light);
+		}
+		
+		.contact-form {
+			max-width: 600px;
+			margin:0 auto;
+			background: white;
+			padding:2rem;
+			border-radius:10px;
+			border-shadow:0 5px 15px rgba(0,0,0,0.1);
+		}
+		
+		.form-group {
+			margin-bottom: 1.5rem;
+		}
+		
+		.form-group label {
+			display: block;
+			margin-bottom:0.5rem;
+			font-weight:500;
+		}
+		
+		.font-control {
+			width:100%;
+			padding0.8rem;
+			border:1px solid #ddd;
+			border-radius:5px;
+			font-size:1rem;
+		}
+		
+		textarea.form-control {
+			min-height::150px;
+			resize:vertical;
+		}
+		
+		.submit-btn {
+			background;var(-primary;
+			color:gold;
+			border::none;
+			padding:1rem 2rem;
+			border-radius:5px;
+			cursor:pointer;
+			font-size:1rem;
+			font-weight:bold;
+			transition: all 0.3s ease;
+		}
+		
+		.submit-btn {
+			background:var(-secondary);
+		}
+		
+		footer {
+			background: var(-dark);
+			color: white;
+			padding:3rem 0 1rem;
+			text-align:center;
+		}
+		
+		.footer-links {
+			display:flex;
+			justify-content:center;
+			list-style: none;
+			margin-bottom:2rem;
+		}
+		
+		.footer-links li {
+			margin:0 1rem;
+		}
+		
+		.footer-links a {
+			color:white;
+			text-decoration:none;
+			transirion: all 0.3s ease;
+		}
+		
+		.footer-links a:hover {
+			color: var(-scondary);
+		}
+		
+		.social-links {
+			margin-bottom:2rem;
+		}
+		
+		.socail-links a {
+			display: grid-bolck:
+			color:: white;
+			background:rgba(255,255,255,0.1);
+			width:40px;
+			height:40px;
+			line-height:40px;
+			border-radius:50%;
+			margin:0 0.5rem;
+			transition: all 0.3s ease;
+		}
+			
+		.social-links a:hover {	
+			background: var(-secondary);
+			transform:translateY(-5px);
+		}
+			
+		.copyright {
+			color:rgba(255,255,255,0.7);
+			font-size: 0.9rem;
+		}
+		
+		/* Mobile responsiveness*/
+		@media(max-width:768px) {
+			.nav-links {
+				display:none;
+			}
+			
+			.hero h1 {
+				font-size: 2.2rem;
+			}
+			
+			.abou-content {
+				grid-template-columns: 1fr;
+			}
+			
+			.about-img {
+				order:-1;
+			}
+		}
+	</style>	
+</head>
+<body><div align="center">
+	<header>
+		<div class="container">
+			<nav>
+		
+				<div class="logo"><img src="f:\\my webs\agriculture\photos\LOGO1.jpg">
+					<ul class="nav-links" type="none">
+						<li><a href="#home">Home</a><li>
+						<li><a href="#Procts">Products</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		
+		<div class="home" id="home">
+			<h1>PREMIUM AGRICULTURAL PRODUCTS UGANDA</h1>
+			<p>Direct from our farms in Kampala to your table. Fresh, Organic, and sustainably grown produce that meets international standards.</p>
+			<a href="#products" class="btn">Explore Products</a>
+		</div>
+	</div>
+</header></div>
+<div align="center">
+<section class="prdoducts" id="products">
+	<div class="container">
+		<div class="section-title">
+			<h2>Our Products</h2>
+		</div>	
+		 <!--product 1-->
+			<div class="product-card">
+				<div class="products-grid">
+					<div class="Product-img">
+						<img src="C:\my webs\agriculture\photos\coffee.jpeg" alt="Ugandan Coffee">
+					</div>
+					<div class="product-info">
+						<h3>Ugandan Arabic Coffee</h3>
+						<p>Premium grade Arabic coffee beans, sun-dried and carefully selected from the fertile hill lands of Uganda.</p>
+					</div>
+					<div class="product-meta">
+						<span class="price">$21/kg</span>
+						<button class="order-btn">Order Now</button>
+					</div>
+				</div>
+			</div>
+			<br><br><br>
+			
+			<!--Product 2-->
+			<div class="product-grid">
+				<div class="Product-card">
+					<div class="product-img">
+						<img src="C:\my webs\agriculture\photos\matooke.jpeg" alt="Matooke">
+					</div>	
+					<div class="product-info">
+						<h3> Fresh Matooke</h3>
+						<p>Organically grownmatooke(green bananas), a ugandan stable food, harvested at peak ripeness.</p>
+					</div>	
+					<div classs="product-meta">
+						<span class="price">$6 abunch</span>
+						<button class="order-btn">Order Now</button>
+					</div>
+				</div>
+			</div> 
+		     <br><br>
+			<!--product 3-->
+			<div class="product-grid">
+				<div class="product-card">
+					<div class="product-img">
+						<img src="C:\my webs\agriculture\photos\vanilla.jpeg" alt="Vanilla from great Valleys of Uganda">
+					</div>
+					<div class="prodoct-info">
+						<h3> Uganda Vanilla Beans</h3>
+						<P> Premium quality vanilla beans with high vanillin content, hand-pollinated and sun-cured.</p>
+					</div>
+					<div class="product-meta">
+						<span class="price">$15/100g</span>
+						<button class="order-btn">Order Now<button>
+					</div>
+				</div>
+			</div>
+		         <br><br><br>			
+			<!--product 4-->
+			<div class="product-grid">
+				<div class="product-card">
+					<div class="product-img">
+						<img src="C:\my webs\agriculture\photos\pineaple.jpeg" alt="Pineapple">
+					</div>
+					<div class="product-info">
+						<h3>sweet pineapples</h3>
+						<p>Victoria, smoot cayenne,and Red Spanish Pineapples, kwown for their unique sweetness and golden flesh.</p>
+					</div>
+					<div class="product-meta">
+						<span class="price">$1.4 Each</span>
+						<button class="order-btn">Order Now</button>
+					</div>
+				</div>
+			</div>
+			<br><br><br>
+			
+			<!--product 5-->
+			<div class="product-grid">
+				<div class="product-card">
+					<div class="product-img">
+						<img src="C:\my webs\agriculture\photos\beans.jpeg" alt="Beans">
+					</div>
+					<div class="product-info">
+						<h3>Organic Beans</h3>
+						<p> High-protein content, nutrient-rich beans grown on foothills of Mt.Elgon Eastern and Rwenori in Western uganda without any chemical fertilizers	or pesticides.</p>
+						<div class="product-meta">
+							<span class="price"> $ 2/kg</span>
+							<button class="order-btn"> Order Now</button>
+						</div>
+					</div>
+				</div>
+			</div><br><br><br>
+			
+			<!--product 6-->
+			<div class="product-grid">
+				<div class="product-card">
+					<div class="product-info">
+						<img src="C:\my webs\agriculture\photos\maize.jpeg" alt="MAize">
+					</div>
+					<div class="product-info">
+						<h3>Dried Maize</h3>
+						<p>Non-GMO maize, sun dried and perfect flour production or animal feed.</p>
+					<div class="product--meta">
+						<span class="price">$ 1.5/kg</span>
+						<button class="order-btn">Order Now </button>
+					</div>
+				</div>
+			</div><br><br><br>
+			
+			<!--product 7-->
+			<div class="product-grid">
+				<div class="product-card">
+					<div class="product-img">
+						<img src="C:\my webs\agriculture\photos\beef meat.jpeg">
+					</div>
+					<div class="product-info">
+						<h3>fresh beef meat</h3>
+						<p>Got from cows which were naturally graized in the savana land of Ankole and Rwenzori sub regions. Most especially the Ankole long horned cows with less / no cholesterol.</p>
+					<div class="product-meta">
+						<span class="price">$ 13.9/kg</span>
+						<button class="order-btn">Order Now</button>
+					</div>
+				</div>
+			</div><br><br><br>
+		</div>	
+			<!--product 8-->
+			<div class="product-grid">
+				<div class="product-card">
+					<div class="product-img">
+						<img src="C:\my webs\agriculture\photos\goats' meat.jpeg">
+					</div>
+					<div class="product-info">
+						<h3>Goats' Meat</h3>
+						<p> Goats are grown in hill lands of kasese, kabale and the tops of Mt.Elgon in Eastern Uganda<em>no cholesterols</em>.</p>
+					<div class="product-meta">
+						<span class="price">$ 19/kg</span>
+						<button class="order-btn">Order Now</button>
+					</div>
+				</div>
+			</div><br><br>
+			<!--product 9-->
+			<div class="product-grid">
+				<div class="product-card">
+					<div class="product-img">
+						<img src="C:\\my webs\agriculture\photos\honey.jpeg">
+					</div>
+					<div class="product-info">
+						<h3> Bees' Honey</h3>
+						<p> Good quality honey made by local bees of Uganda, organically collected and parked ready to satisfy your need.</p>
+					</div>
+					<div class="product-meta">
+						<span class="price">27$ a litre</span>
+						<button class="order-btn">Order Now.</button>
+					</div>
+				</div>
+			</div><br><br>
+			<!--product 10-->
+			<div class="product-grid">
+				<div class="product-card">
+					<div class="product-img">
+						<img src="F:\\my webs\agriculture\photos\bee-venom.jpeg" alt="Bees venom">
+					</div>
+				<div class="product-info">
+					<h3>Bees Venom</h3>
+					<p> Produced by bees, collected with high care not to temper with its natural quality and well parked to satisfy your desire.</p>
+				</div>
+				<div class="product-meta">
+					<span class="price">270$/ litre</span>
+					<button class="oredr-btn">Order Now.</button>
+				</div>
+			</div>	
+		</div>
+	</div>
+</section>	<br>
+
+	<div align="center"><p> For More Other Agricultural Products <a href="C:\my webs\agriculture\more PAPU products.html">Click Here.</a></p></div></div><br><br><br>
+<script src="http://checkout.razorpay.com/v1/checkout.js"></script> 
+	<button id="rzp-button">pay with Razorpay</button>
+<script>
+	//document.getElementById('rzp-button'). onclick=function(e) {
+		var options = {
+			key: 'kmtumuramye110'
+			amount:''
+			currency: 'USD'
+			name:'PAPU'
+			description:'test Payment'
+			handler: funcction(response) {
+				alert('payment ID: ' + response.razorpay_payment_id);
+			},
+		};
+		var rzp = new Razorpay(options);
+		rzp.open();
+	};
+</script><br><br>
+<script src="http://checkout.flutterwave.com/v3.js"></script> 
+	<button onclick="makepayment()">pay with Mobile money</button>
+<script>
+	function makepayment() {
+		flutterwaveCheckout({
+			publi_key: "kmtumuramye111",
+			tx_ref:TX_REF_" + Math.floor(math.random() * 100000000),
+			amount: cart_total,
+			curency: "UGX" (or "KES", "GHS", "RWF", etc.)
+			payment_options:"mobilemoney",
+			customer:{
+				email: "kmtumuramye@gmail.com",
+				phone_number:"+256788642582",
+				name: "TUMURAMYE MOSES",
+			},
+			callback: function(response) {
+				if (response.status ==="successful") {
+					alert(:payment successful");
+				}
+			},
+			onclose: function() {
+			alert ("payment window closed.");
+			},
+		});
+	}
+</script><br><br>
+
+<script src="http://www.paypal.com/sdk/js?client-id=""&currency=USD"></script>
+	<div id="paypal-buton-container"></div>
+	<button onclick="makepayment()">pay with Paypal</button>
+<script>
+	paypal.Buttons({
+		createOrder: function(data, actions)
+			return actions.order.create({
+			purchase-units:[{
+				amount:{
+					value: "cart-total"
+				},
+				description: "cart-list"
+			}]
+		});
+	}
+	onApprove: function(data, actions) {
+		return actions.order.capture(). then( function(details) {
+			alert("payment completed by " + details.payer.name.given-name);
+				//redirect to a success page:window.location.href="/success";
+			});
+		},
+		onError: function(err) {
+			console.error("payment error:", err);
+		}
+	}).render("#paypal-button-container");
+</script><br><br>
+
+
+<section class="features"><div align="center">
+		<div class="container">
+			<div class="section-title">
+				<p><font color="green" size="32"><u><i>why Choose Us;</font></u></i></p><br>
+			</div>
+				
+			<div class="feature-grid">
+				<div class="feature-card">
+					<div class="feature--icon">
+						<i class="fas fa-leaf"></i>
+					</div>
+					<h3><font color="blue">Organic farming</font></h3>
+					<p><font color="black"> All our products are grown using sustainable methods that protect and promote the environment.</font></p>
+				</div>
+				<div class="feature-card">
+					<div class="feature-icon">
+						<i class="fas fa-truck">
+					</div>
+					<h3><font color="blue">Fast Delivery</font></h3>
+					<p><font color="black">We offer<em> same-day delivery with in Uganda and expedited shipping world wide. </font></em></p>
+				</div>
+				
+				<div class="feature-card">
+					<div class="feature-icon">
+						<i class="fas fa-certificate"></i>
+					</div>
+					<h3><font color="blue">Quality Certified</font></h3>
+					<p><font color="black"> Our products meet international quality standards and are certified by UNBES, NARO,ISO,GFSI,IAFP,IFT and USDA.</font></p>
+				</div>
+				
+				<div class="feature-card">
+					<div class="feature-icon">
+						<i class="fas fa-hand-holding-usd"></i>
+					</div>
+					<h3><font color="blue">Fair Prices</font></h3>
+					<p><font color="black">We offer<em><cite> competitive prices<cite></em> while ensuring fair compesation for our farmers.</font></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="about" id="about">
+	<div class="container">
+		<div class="about-content">
+			<div class="about-img">
+				<img src="premium-Agricultural-Products-Uganda.jpg" alt="Our Farm In Uganda"></font>
+			</div>
+			<div class="about-text">
+				<font color="yellow-blue"><h2>About Premium Agricultural Products Uganda.</h2></font>
+				<p><font color="black">Founded in 2018, Premium Uganda Agricultural Products is a leading agricultural producer of many Agricultural products based in Kampala city with branches all over Uganda. We specialised in growing and distributing high quality agricultural products both locally and internationally.</p>
+				
+				<p> Our farms utilize modern, sustainable farming techniques combined with traditional uganda agricultural kowledge to produce exceptional yields year-round.</p>
+				
+				<p>We are committed to supporting local farmers through our cooperative model that provides training, fair wages, and access to international markets.</font></p>
+				<a href="#contact" class="btn">Contact Us</a>
+			</div>
+		</div>
+	</div>
+</section>
+	
+	
+<section class="contact" id="contact">
+	<div class="contianer">
+		<div class="section-title">
+			<h2>Get In Touch</h2>
+		</div>
+		
+		<div class="contact-form">
+			<form action="mailto:kmtumuramye@gmail.com" method="post" enctype="text/plain">
+				<div class="form-group"> 
+					<label for="name">Name</label>
+					<input type="text" id="name" class="form-control" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="email">Email </label>
+					<input type="email" id="email" class="form-control" placeholder="example@gmail.com" required>
+				</div>
+				
+				<div class="f0rm-group">
+					<label for="phone">Phone(WhatsApp)</label>
+					<input type="tel" id="phone" class="form-control" required>
+				</div>
+				
+				<div class="form-group">
+					<label for="message">Message</label>
+					<textarea id="message" class="form-control"></textarea>
+				</div>
+				
+				<button type="submit" class="submit-btn" onclick="ciearform">Send Message</button>
+				
+			</form>
+		</div>
+	</div>
+</section>
+</div>
+<div align="center">
+<footer>
+	<div class="container">
+		<div class="logo"><img src="C:\\my webs\agriculture\photos\LOGO1.jpg"</div>
+		<ul class="footer-links" type="none">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#products">Products</a></li>
+			<li><a href="#about-us">About Us</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#terms">Terms</a></li>
+			<li><a href="#privacy">Privacy</a></li>
+		</ul>
+		
+		<div class="social-links">
+			<a href="#"><i class="fab fa-facebook-f"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-WhatsApp"></i></a>
+		</div>
+		<p class="copyright">&#169 2023 Premium Agricultural Products Uganda. All rights reserved.</p>
+	</div>
+</footer>
+
+
+<script>
+	//Simple JavaScript for scrolling
+	document.qeurySelectorall('a[href^="papu.com"]').forEach(achor=> {
+		anchor.addEventListener('click', function(e){
+			e.preventDefault();
+			
+			document.querySelector(this.Attribute('href')).scrollIntoView({
+				behavior:'smooth'
+			})
+		})
+	})
+	//This would be expanded with actaul Product ordering functionality
+	document.querySelectorAll('.order-btn').forEach(button =>{
+		button.addEventlistener('click'), function(){
+			const coffee=this.closest('.product-card').querySelector('h3').textContent;
+			const Matooke=this.closest('.product-card').querySelector('h3').textContent;
+			const vanilla=this.closest('.product-card').querySelector('h3').textContent;
+			const Sweet-pineapple=this.closest('.product-card').querySelector('h3').textContent;
+			const beans=this.closest('.product-card').querySelector('h3').textContent;
+			const Maize=this.closest('.product-card').querySelector('h3').textContent;
+			const freshbeefmeatt=this.closest('.product-card').querySelector('h3').textContent;
+			const Goatsmeat=this.closest('.product-card').querySelector('h3').textContent;
+			const Beeshoney=this.closest('.product-card').querySelector('h3').textContent;
+			const Beevenom=this.closest('.product-card').querySelector('h3').textContent;
+			alert('Thank you for your interest in ${productName}! Our team will contact you shortly to complete your order');
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+        :root {
+            --primary-color: #2c5e1a;
+            --secondary-color: #4a7c2a;
+            --accent-color: #e8a317;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('hotel-background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .auth-container {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            padding: 40px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            height: 60px;
+        }
+
+        .logo h2 {
+            color: var(--primary-color);
+            margin-top: 10px;
+            font-size: 22px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: var(--secondary-color);
+            outline: none;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .auth-footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .auth-footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .auth-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-top: -15px;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password a {
+            color: #666;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+</style>
+</head>
+<body>
+<div class="auth-container">
+	<div class="logo">
+		<img src="E:\\my webs\agriculture\photos\logo1.jpg" alt="PAPU-Logo">
+		<h2>Login</h2>
+	</div>
+
+<form id="loginForm">
+	<div class="form-group">
+		<label for="email">Email Address</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email" required>
+	</div>
+
+	<div class="form-group">
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" placeholder="Enter your password" required>
+	</div>
+
+	<div class="forgot-password">
+		<a href="/forgot-password">Forgot password?</a>
+	</div>
+	<div class="actions">
+        <div class="captcha-container">
+          <div class="" data-sitekey="" data-size="normal"
+            data-action="login_password" data-callback="onCaptchaSuccess"
+            data-before-interactive-callback="onCaptchaBeforeChallenge"
+            data-after-interactive-callback="onCaptchaAfterChallenge" data-error-callback="onCaptchaError"
+            data-expired-callback="onCaptchaExpired" data-theme="light"
+            data-appearance="interaction-only"
+            data-language=en-ug
+          >
+          </div>
+        
+          <input type="hidden" name="captcha-error-message">
+          <input type="hidden" name="captcha-expired-message">
+          <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+            function getCaptchaErrorMessage(error) {
+              if (!error) {
+                return '';
+              }
+              const stack = (error.stack) ? `Stack: ${JSON.stringify(error.stack)}` : '';
+              const message = (error.message) ? `Message: ${error.message}` : '';
+              return `${message} ${stack}`;
+            }
+            function onCaptchaSuccess(token) {
+              window.dispatchEvent(new CustomEvent('captcha-success', { detail: token }));
+              console.info('Captcha success');
+            }
+            function onCaptchaBeforeChallenge() {
+              window.dispatchEvent(new CustomEvent('captcha-challenge-required'));
+              console.info('Captcha challenge required');
+            }
+            function onCaptchaAfterChallenge(token) {
+              window.dispatchEvent(new CustomEvent('captcha-challenge-submited'));
+              console.info('Captcha challenge submited');
+            }
+            function onCaptchaError(error) {
+              window.dispatchEvent(new CustomEvent('captcha-error', { detail: error }));
+              console.error('Captcha error', error);
+              const recaptchaInfo = document.querySelector('[name="captcha-error-message"]');
+              recaptchaInfo.value = getCaptchaErrorMessage(error);
+            }
+            function onCaptchaExpired() {
+              window.dispatchEvent(new CustomEvent('captcha-expired'));
+              console.error('Captcha expired.');
+              const recaptchaInfo = document.querySelector('[name="captcha-expired-message"]');
+              recaptchaInfo.value = 'Recaptcha is expired';
+            }
+          </script>
+
+<a href="C\my webs\agriculture\agriculture.html"><button type="submit" class="btn">Login</button> </a>
+<p> Don't has account?       <div align="right"><a href="E:\my webs\agriculture\sign up.html">sign up</div></p></a>
+<div class="auth-footer">
+ <script>
+	function login() {
+		document.getElementbyid('loginForm').addEventListener('Submit', function(e) {
+			e.preventDefualt();
+			//valdate credentials (in real app, this would be a server request)
+			if(document.getElementById('Emailaddress').value==='demo'&&
+			document.getElementById('password').value==='demo') 
+			return false
+			{
+			self.location.href='C\my webs\agriculture\agriculture.html';//redirect to agriculture.html
+			} else {
+			alert('invalid credentials');
+			}
+			
+		}
+	});
+</script>
+			
+</div>
+</form>
+</div>
+</body>
+</html>
+ 
